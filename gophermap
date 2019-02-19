@@ -21,10 +21,12 @@ _________________________________________________________________
       
 1The Bongusta	/en/bongusta	i-logout.cz	70
 _________________________________________________________________
+
 System Information
+
 There are currently:
 =ps auxf | awk '{print $1}'  | sort | uniq | egrep -v "www-data|opendkim|systemd|znc|minecraft|minetest|dovecot|postfix|avahi|bzflag|Debian|irc|root|mysql|message|USER" | wc -l
 Users logged in.
 
-Current load average"
+Current load average:
 =uptime
