@@ -7,19 +7,26 @@ brought to you by:
 1amcclure	/~amcclure/	thunix.net	70
 1ubergeek	/~ubergeek/	thunix.net	70
 _________________________________________________________________
-Please check out our other gopher users
 
-~
+Service Status:
+=/bin/sed 's/,/\t/g' /var/www/thunix.cf/report | /bin/sed 's/thunix\.cf//g' | /usr/bin/column -t
+
 _________________________________________________________________
 
-Other Gopher Resources
-_________________________________________________________________
-1Tilde.town gopherhole	/	tilde.town	70
-1Tilde.team gopherhole	/	tilde.team	70
-1Yourtilde.com gopherhole	/	yourtilde.com	70
-1SDF	/	sdf.org	70
-      
-1The Bongusta	/en/bongusta	i-logout.cz	70
+Current Load Average:
+=uptime
+
 _________________________________________________________________
 
-1System Information	/sytem_info	thunix.net	70
+Current Disk Utllization:
+=/bin/df -h /
+
+_________________________________________________________________
+
+There are currently:
+=ps auxf | awk '{print $1}'  | sort | uniq | egrep -v "www-data|opendkim|systemd|znc|minecraft|minetest|dovecot|postfix|avahi|bzflag|Debian|irc|root|mysql|message|USER" | wc -l
+Users logged in.
+
+_________________________________________________________________
+
+1Return To Thunix Home	/	thunix.net	70
